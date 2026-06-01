@@ -23,7 +23,7 @@ export default function Header() {
   }, []);
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen((prev) => !prev);
   };
 
   const closeMobileMenu = () => {
@@ -75,9 +75,17 @@ export default function Header() {
           />
         </button>
 
+        {/* Backdrop Overlay */}
+        {isMobileMenuOpen && (
+          <div
+            className="fixed inset-0 bg-black/35 backdrop-blur-xs z-[999] lg:hidden"
+            onClick={closeMobileMenu}
+          />
+        )}
+
         {/* Navigation Menu */}
         <nav
-          className={`fixed lg:relative top-0 right-0 h-screen lg:h-auto w-4/5 max-w-[400px] lg:w-auto lg:max-w-none bg-champagne lg:bg-transparent shadow-xl lg:shadow-none flex flex-col lg:flex-row justify-center lg:justify-end items-center gap-12 lg:gap-12 transition-all duration-500 ease-smooth z-[1000] ${
+          className={`fixed lg:relative top-0 h-screen lg:h-auto w-4/5 max-w-[400px] lg:w-auto lg:max-w-none bg-champagne lg:bg-transparent shadow-xl lg:shadow-none flex flex-col lg:flex-row justify-center lg:justify-end items-center gap-12 lg:gap-12 transition-all duration-500 ease-smooth z-[1000] ${
             isMobileMenuOpen ? "right-0" : "-right-full lg:right-0"
           }`}
         >
