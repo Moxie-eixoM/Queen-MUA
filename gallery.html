@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View the luxury makeup portfolio of Queen Makeup Artistry. Signature Soft Glams, Bridal looks, and Editorial creations by Queen Bamiyo.">
+  <meta name="keywords" content="Makeup Portfolio, Soft Glam Gallery, Bridal Makeup Images, Editorial Makeup, Queen MUA lookbook">
+  <meta name="author" content="Queen Makeup Artistry">
+  <meta property="og:title" content="Glam Portfolio | Queen Makeup Artistry">
+  <meta property="og:description" content="Explore signature looks, bridal transformations, and professional editorial makeup by Queen Bamiyo.">
+  <meta property="og:image" content="assets/images/soft_glam_portrait.png">
+  <meta property="og:url" content="https://queenmakeupartistry.com/gallery.html">
+  <link rel="canonical" href="https://queenmakeupartistry.com/gallery.html">
+  
+  <title>Portfolio & Lookbook | Queen Makeup Artistry</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=2">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Navigation Bar -->
+  <header class="header-nav" id="mainHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-brand">QUEEN <span>MUA</span></a>
+      
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="book.html" class="nav-link">Book</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="book.html" class="btn btn-outline" style="padding: 0.7rem 1.8rem; font-size: 0.75rem;">Book Glam</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Gallery Hero -->
+  <section class="gallery-hero section-padding">
+    <div class="container">
+      <span class="hero-subtitle">Visual Experience</span>
+      <h1 class="about-title" style="margin-bottom: 1.5rem;">The Glam Portfolio</h1>
+      <p style="max-width: 600px; margin: 0 auto 3rem auto; color: var(--color-muted);">
+        A curated showcase of professional cosmetic artistry. Filter through our signature soft glams, luxurious bridal sessions, and bold editorial concepts.
+      </p>
+      
+      <!-- Filters -->
+      <div class="gallery-filters" id="galleryFilters">
+        <button class="filter-btn active" data-filter="all">All Looks</button>
+        <button class="filter-btn" data-filter="softglam">Soft Glam</button>
+        <button class="filter-btn" data-filter="bridal">Bridal Luxury</button>
+        <button class="filter-btn" data-filter="editorial">Editorial & Fashion</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid Section -->
+  <section style="background-color: var(--color-cream); padding: 4rem 0;">
+    <div class="container">
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Item 1: Bridal -->
+        <div class="portfolio-item" data-category="bridal" data-src="assets/images/hero_glam_shoot.png" data-title="Luminous Gold Bride" data-desc="Flawless, warm-toned bridal glam with glowing skin finish.">
+          <img src="assets/images/hero_glam_shoot.png" alt="Bridal Look Gold Tone">
+          <div class="portfolio-item-info">
+            <span>Bridal Luxury</span>
+            <h4>Luminous Gold Bride</h4>
+          </div>
+        </div>
+        
+        <!-- Item 2: Soft Glam -->
+        <div class="portfolio-item" data-category="softglam" data-src="assets/images/soft_glam_portrait.png" data-title="Classic Soft Glam" data-desc="Signature soft glam showcasing neutral bronze shades and satin lips.">
+          <img src="assets/images/soft_glam_portrait.png" alt="Classic Soft Glam Look">
+          <div class="portfolio-item-info">
+            <span>Soft Glam</span>
+            <h4>Classic Soft Glam</h4>
+          </div>
+        </div>
+        
+        <!-- Item 3: Editorial -->
+        <div class="portfolio-item" data-category="editorial" data-src="assets/images/editorial_bold_look.png" data-title="Editorial Winged Eye" data-desc="High fashion editorial close-up with sharp winged liner and wet-skin finish.">
+          <img src="assets/images/editorial_bold_look.png" alt="Editorial Fashion Winged Liner">
+          <div class="portfolio-item-info">
+            <span>Editorial</span>
+            <h4>Sleek Winged Eyeliner</h4>
+          </div>
+        </div>
+        
+        <!-- Item 4: Bridal 2 -->
+        <div class="portfolio-item" data-category="bridal" data-src="assets/images/hero_glam_shoot.png" data-title="Satin Rose Bride" data-desc="Romantic rose-pink bridal tones with fresh-faced skin prep.">
+          <img src="assets/images/hero_glam_shoot.png" alt="Satin Rose Bridal Look">
+          <div class="portfolio-item-info">
+            <span>Bridal Luxury</span>
+            <h4>Satin Rose Bride</h4>
+          </div>
+        </div>
+        
+        <!-- Item 5: Soft Glam 2 -->
+        <div class="portfolio-item" data-category="softglam" data-src="assets/images/soft_glam_portrait.png" data-title="Everyday Glow" data-desc="Lightweight weightless glam featuring minimal eyes and maximum skin health highlight.">
+          <img src="assets/images/soft_glam_portrait.png" alt="Everyday Glow Look">
+          <div class="portfolio-item-info">
+            <span>Soft Glam</span>
+            <h4>Everyday Glow</h4>
+          </div>
+        </div>
+        
+        <!-- Item 6: Editorial 2 -->
+        <div class="portfolio-item" data-category="editorial" data-src="assets/images/editorial_bold_look.png" data-title="Red Carpet Luminous" data-desc="Glossy lookbook editorial with clean base and nude lips.">
+          <img src="assets/images/editorial_bold_look.png" alt="Red Carpet Makeup Glam">
+          <div class="portfolio-item-info">
+            <span>Editorial</span>
+            <h4>Red Carpet Luminous</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption">
+        <h4 id="lightboxTitle">Image Title</h4>
+        <p id="lightboxDesc">Description text goes here</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Booking Teaser Banner -->
+  <section class="section-padding" style="background-color: var(--color-charcoal); color: var(--color-white); text-align: center;">
+    <div class="container">
+      <span class="hero-subtitle" style="color: var(--color-accent-peach);">Reserve Your Glam</span>
+      <h2 style="color: var(--color-white); margin-bottom: 1.5rem;">Love What You See?</h2>
+      <p style="color: var(--color-light-gray); max-width: 600px; margin: 0 auto 3rem auto;">
+        Secure your date in our interactive portal and experience our signature makeup care firsthand.
+      </p>
+      <a href="book.html" class="btn btn-primary">Book Your Glam Session Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid-3" style="margin-bottom: 4rem;">
+        <div>
+          <div class="footer-logo">QUEEN <span>MUA</span></div>
+          <p style="margin-bottom: 1.5rem; max-width: 320px;">
+            Sophisticated makeup artistry combining advanced skin preparation with custom cosmetics for a weightless, radiant finish.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/queenmuastudios" target="_blank" class="footer-social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/queenmuabrides" target="_blank" class="footer-social-link"><i class="fa-solid fa-ring"></i></a>
+            <a href="https://www.instagram.com/queenbamiyo" target="_blank" class="footer-social-link"><i class="fa-solid fa-signature"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Bamiyo</a></li>
+            <li><a href="gallery.html">Glam Portfolio</a></li>
+            <li><a href="book.html">Book Appointment</a></li>
+            <li><a href="contact.html">Contact & FAQs</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3>MUA Studio Details</h3>
+          <p style="margin-bottom: 1rem;"><i class="fa-solid fa-map-pin" style="color: var(--color-accent-peach); margin-right: 0.8rem;"></i> Derby, Midlands | London, United Kingdom</p>
+          <p style="margin-bottom: 1rem;"><i class="fa-solid fa-envelope" style="color: var(--color-accent-peach); margin-right: 0.8rem;"></i> queenmakeupartistry@gmail.com</p>
+          <p style="margin-bottom: 1rem;"><i class="fa-solid fa-plane" style="color: var(--color-accent-peach); margin-right: 0.8rem;"></i> Available for national & international travel</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Queen Makeup Artistry. All Rights Reserved.</p>
+        <p>Designed by Moxie.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP Core and Plugins -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  
+  <!-- Custom scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
